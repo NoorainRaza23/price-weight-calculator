@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Price and Weight Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calculator">
+        <h2>Price and Weight Calculator</h2>
+
+        <label for="actualPrice">Enter the actual price of the item:</label>
+        <input type="number" id="actualPrice" placeholder="Actual Price">
+
+        <label for="calculationType">Choose calculation type:</label>
+        <select id="calculationType">
+            <option value="1">Calculate weight based on price</option>
+            <option value="2">Calculate price based on weight</option>
+        </select>
+
+        <div id="priceInput" class="input-container" style="display: none;">
+            <label for="desiredPrice">Enter the price of the item you want:</label>
+            <input type="number" id="desiredPrice" placeholder="Desired Price">
+        </div>
+
+        <div id="weightInput" class="input-container" style="display: none;">
+            <label for="desiredWeight">Enter the weight of the item you want:</label>
+            <input type="number" id="desiredWeight" placeholder="Desired Weight">
+        </div>
+
+        <button onclick="calculate()">Calculate</button>
+
+        <div id="result" class="result-container"></div>
+
+        <script src="script.js"></script>
+    </div>
+</body>
+</html>

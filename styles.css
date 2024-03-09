@@ -1,0 +1,84 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.calculator {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 450px;
+    box-sizing: border-box;
+}
+
+input, select, button {
+    margin: 15px 0;
+    padding: 12px;
+    border: 2px solid #673ab7;
+    border-radius: 10px;
+    width: 100%;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: #512da8;
+}
+
+button {
+    background-color: #673ab7;
+    color: #ffffff;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    padding: 14px;
+    font-size: 18px;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #512da8;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.result-container {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Apply style to labels */
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #673ab7;
+}
+
+h2 {
+    color: #512da8;
+    margin-bottom: 20px;
+}
+
+/* Responsive Design */
+@media screen and (min-width: 600px) {
+    .calculator {
+        max-width: 600px;
+    }
+}
